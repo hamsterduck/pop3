@@ -51,22 +51,50 @@ void DateTime::setDay(int day, int month){
 			cout << "ERROR: Day is not valid" << endl;
 		}
 	}
+}
 
-}
 void DateTime::setMonth(int month){
-	m_month = month;
+	if (month > 0 && month < 30){
+		m_month = month;
+	}
+	else{
+		cout << "ERROR: Month is not valid" << endl;
+	}
 }
+
 void DateTime::setYear(int year){
-	m_year = year;
+	if (year >= 1969 && year <= 2015){
+		m_year = year;
+	}
+	else{
+		cout << "ERROR: Year is not valid" << endl;
+	}
 }
+
 void DateTime::setHour(int hour){
-	m_hour = hour;
+	if (hour >= 0 && hour <= 24){
+		m_hour = hour;
+	}else{
+		cout << "ERROR: Hour is not valid" << endl;
+	}
 }
+
 void DateTime::setMinute(int minute){
-	m_minute = minute;
+	if (minute >= 0 && minute < 60){
+		m_minute = minute;
+	}
+	else{
+		cout << "ERROR: Minute is not valid" << endl;
+	}
 }
+
 void DateTime::setSecond(int second){
-	m_second = second;
+	if (second >= 0 && second < 60){
+		m_second = second;
+	}
+	else{
+		cout << "ERROR: Second is not valid" << endl;
+	}
 }
 
 void DateTime::printDate() const {}// TODO
