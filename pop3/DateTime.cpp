@@ -24,8 +24,34 @@ int DateTime::getSecond() const{
 }
 
 //setters
-void DateTime::setDay(int day){
-	m_day = day;
+void DateTime::setDay(int day, int month){
+	if (month == 2){
+		if (day > 0 && day <= 28){
+			m_day = day;
+		}else{
+			cout << "error reading day - out of range" << endl;
+		}
+	}
+	if (month == 4 || month == 6 || month == 9 || month == 11){
+		if (day > 0 && day <= 30){
+			m_day = day;
+		}
+		else{
+			cout << "error reading day - out of range" << endl;
+		}
+	}
+	else if (month < 1){
+		cout << "error reading month - out of range" << endl;
+	}
+	else{
+		if (day > 0 && day <= 31){
+			m_day = day;
+		}
+		else{
+			cout << "error reading day - out of range" << endl;
+		}
+	}
+
 }
 void DateTime::setMonth(int month){
 	m_month = month;

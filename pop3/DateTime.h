@@ -34,7 +34,7 @@ public:
 	int getSecond() const;
 
 	//setters
-	void setDay(int day);
+	void setDay(int day, int month);
 	void setMonth(int month);
 	void setYear(int year);
 	void setHour(int hour);
