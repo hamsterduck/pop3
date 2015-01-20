@@ -22,7 +22,7 @@ public:
 		m_hour(hour),
 		m_minute(minute),
 		m_second(second){
-		cout << "DateTime Ctor invoked" << endl;
+		std::cout << "DateTime Ctor invoked" << std::endl;
 	}
 
 	//getters
@@ -46,7 +46,7 @@ public:
 	//Dtor
 
 	~DateTime(){
-		cout << "Default Dtor of DateTime activated" << endl;
+		std::cout << "Default Dtor of DateTime activated" << std::endl;
 	}
 };
 
