@@ -1,0 +1,5 @@
+#USERNAME : user@gmail.com, PASSWORD : 123456
+user@gmail.com, 123456
+
+#MailId:1,from:yoni80@gmail.com,to: aloni1907@gmail.com,receivedDate: 01012013230535 ABCDEFGHIJKLMNOPQRSTUVWXYZ (limit to 50 chars)
+1,yoni80@gmail.com, aloni1907@gmail.com, 01012013230535 ,ABCDEFGHIJKLMNOPQRSTUVWXYZ

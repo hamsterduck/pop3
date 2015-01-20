@@ -1,29 +1,53 @@
 #ifndef DATE_TIME_H
 #define DATE_TIME_H
 
+// This class is responsible for managing mailDate data
+
 class DateTime{
 
 private :
-	int m_day;
-	int m_month;
-	int m_year;
-	int m_minute;
-	int m_second;
+	int m_day; // 1-28 || 1-30 || 1-31 
+	int m_month; // 1-12
+	int m_year;	//this year
+	int m_hour;//1-24
+	int m_minute; // 0-59
+	int m_second; // 0-59
 
 public:
-	int getDay();
-	int getMonth();
-	int getYear();
-	int getMinute();
-	int getSecond();
+	//Ctor
+	DateTime(int day, int month, int year, int hour, int minute, int second) :
+		m_day(day),
+		m_month(month),
+		m_year(year),
+		m_hour(hour),
+		m_minute(minute),
+		m_second(second){
+		cout << "DateTime Ctor invoked" << endl;
+	}
 
-	void setDay();
-	void setMonth();
-	void setYear();
-	void setMinute();
-	void setSecond();
+	//getters
+	int getDay() const;
+	int getMonth() const;
+	int getYear() const;
+	int getHour() const;
+	int getMinute() const;
+	int getSecond() const;
 
-	void printDate();
+	//setters
+	void setDay(int day);
+	void setMonth(int month);
+	void setYear(int year);
+	void setHour(int hour);
+	void setMinute(int minute);
+	void setSecond(int second);
+
+	void printDate() const;
+
+	//Dtor
+
+	~DateTime(){
+		cout << "Default Dtor of DateTime activated" << endl;
+	}
 };
 
 

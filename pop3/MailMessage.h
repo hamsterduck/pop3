@@ -1,6 +1,7 @@
 #ifndef MAIL_MSG_H
 #define MAIL_MSG_H
 
+#include <string>
 #include "DateTime.h"
 
 
@@ -8,10 +9,10 @@ class MailMessage{
 
 private:
 	int m_msgId;
-	String m_from;
-	String m_to;
+	std::string m_from;
+	std::string m_to;
 	DateTime m_mailTime;
-	String m_data;
+	std::string m_data;
 	int m_size;
 
 public:
