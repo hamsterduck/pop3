@@ -78,6 +78,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DateTime.h" />
+    <ClInclude Include="MailInterface.h" />
+    <ClInclude Include="MailMessage.h" />
+    <ClInclude Include="Pop3Adaptor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DateTime.cpp" />
+    <ClCompile Include="MailInterface.cpp" />
+    <ClCompile Include="MailMessage.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pop3Adaptor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
