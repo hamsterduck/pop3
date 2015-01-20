@@ -29,7 +29,7 @@ void DateTime::setDay(int day, int month){
 		if (day > 0 && day <= 28){
 			m_day = day;
 		}else{
-			cout << "error reading day - out of range" << endl;
+			cout << "ERROR: Day is not valid" << endl;
 		}
 	}
 	if (month == 4 || month == 6 || month == 9 || month == 11){
@@ -37,18 +37,18 @@ void DateTime::setDay(int day, int month){
 			m_day = day;
 		}
 		else{
-			cout << "error reading day - out of range" << endl;
+			cout << "ERROR: Day is not valid" << endl;
 		}
 	}
 	else if (month < 1){
-		cout << "error reading month - out of range" << endl;
+		cout << "ERROR: Month is not valid" << endl;
 	}
 	else{
 		if (day > 0 && day <= 31){
 			m_day = day;
 		}
 		else{
-			cout << "error reading day - out of range" << endl;
+			cout << "ERROR: Day is not valid" << endl;
 		}
 	}
 
