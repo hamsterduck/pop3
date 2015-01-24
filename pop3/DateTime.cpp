@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "DateTime.h"
 
 using namespace std;
@@ -28,7 +29,8 @@ void DateTime::setDay(int day, int month){
 	if (month == 2){
 		if (day > 0 && day <= 28){
 			m_day = day;
-		}else{
+		}
+		else{
 			cout << "ERROR: Day is not valid" << endl;
 		}
 	}
@@ -74,7 +76,8 @@ void DateTime::setYear(int year){
 void DateTime::setHour(int hour){
 	if (hour >= 0 && hour <= 24){
 		m_hour = hour;
-	}else{
+	}
+	else{
 		cout << "ERROR: Hour is not valid" << endl;
 	}
 }
